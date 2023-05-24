@@ -6,6 +6,7 @@ type Props = {
 }
 
 export default function Home({title = 'TESTE de Types'}: Props) {
+  
   return (
     <div className={styles.container}>
       <Head>
