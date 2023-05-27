@@ -1,5 +1,5 @@
 {
-  "name": "my-trips",
+  "name": "my_trips",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint src",
     "test": "jest",
-    "test:watch": "npm test --watch",
+    "test:watch": "yarn test --watch",
     "prepare": "husky install",
     "precommit": "lint-staged"
   },
@@ -19,8 +19,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "npm run lint --fix",
-      "npm test --bail"
+      "yarn lint --fix",
+      "yarn test --bail"
     ]
   },
   "dependencies": {
@@ -54,5 +54,9 @@
     "prettier": "2.8.8",
     "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/pedrokasak/my-trips.git",
+  "author": "Pedro Henrique <pedrohesm@gmail.com>",
+  "license": "MIT"
 }
