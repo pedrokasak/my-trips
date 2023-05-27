@@ -19,7 +19,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "npm run lint --fix"
+      "npm run lint --fix",
+      "npm test --bail"
     ]
   },
   "dependencies": {
@@ -48,6 +49,7 @@
     "husky": "^8.0.0",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
+    "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.2.2",
     "prettier": "2.8.8",
     "ts-jest": "^29.1.0",
